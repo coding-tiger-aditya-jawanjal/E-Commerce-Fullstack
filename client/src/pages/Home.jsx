@@ -1,6 +1,6 @@
-import LeftHero from "../components/LeftHero";
-import RightHero from "../components/RightHero";
 import { Link } from "react-router-dom";
+import LeftHero from "../components/home/LeftHero";
+import RightHero from "../components/home/RightHero";
 
 const Home = () => {
 	return (

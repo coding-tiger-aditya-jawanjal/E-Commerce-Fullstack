@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
+import ErrorPage from "./pages/ErrorPage";
 
 const App = () => {
 	return (
@@ -12,6 +13,7 @@ const App = () => {
 						<Route path="/" element={<Home />} />
 						<Route path="/products" element={<Products />} />
 					</Route>
+					<Route path="*" element={<ErrorPage />} />
 				</Routes>
 			</main>
 		</BrowserRouter>

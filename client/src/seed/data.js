@@ -1,6 +1,10 @@
 import Sofa1 from "/sofa1.svg";
 import Sofa2 from "/sofa2.svg";
 import Sofa3 from "/sofa3.svg";
+import Banner1 from "/banner1.png";
+import Banner3 from "/banner3.png";
+import Banner4 from "/banner4.png";
+import Banner5 from "/sony-banner.png";
 
 export const FullMenu = [
 	{
@@ -68,6 +72,8 @@ export const HomeImgList = [
 		productName: "Bag 3 - Clothing with natural Colours in it as a essence",
 	},
 ];
+
+export const bannerList = [Banner1, Banner5, Banner3, Banner4];
 
 export const Categories = ["Phones", "Computers", "SmartWatch", "Camera"];
 
