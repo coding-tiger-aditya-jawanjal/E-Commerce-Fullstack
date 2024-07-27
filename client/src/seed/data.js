@@ -30,6 +30,14 @@ export const ProfileMenu = [
 		link: "My Orders",
 		url: "my-orders",
 	},
+	{
+		link: "developer",
+		url: "developer",
+	},
+	{
+		link: "Privacy",
+		url: "privacy-policy",
+	},
 ];
 
 export const MainMenu = [
@@ -96,3 +104,11 @@ export const FooterData = [
 		features: ["Watch", "Bag", "Shoes", "Dress"],
 	},
 ];
+
+export const MyDetails = {
+	title: "About Me : ",
+	headline: "Hi , I am Aditya Jawanjal",
+	para1:
+		"Check if other CSS properties or parent containers could be interfering with the sticky behavior. Specifically, ensure that no parent elements have overflow: hidden or similar styles that might affect scrolling and positioning.",
+	para2: "para 2",
+};

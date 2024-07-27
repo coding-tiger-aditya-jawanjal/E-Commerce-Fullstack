@@ -1,12 +1,12 @@
-import MyModal from "./FilterModal";
+import FilterModal from "./FilterModal";
 import ProductCard from "./ProductCard";
 
 const AllProducts = () => {
 	return (
 		<>
-			<div className="flex flex-col 800:flex-row gap-2 800:gap-10">
-				<div className="flex flex-wrap items-center gap-5 800:gap-10">
-					<MyModal />
+			<div className="flex flex-col 800:flex-row gap-2 800:gap-10 sticky top-0 z-30">
+				<div className="flex flex-wrap items-center gap-5 800:gap-10 ">
+					<FilterModal />
 					<span className="px-6 h-12 bg-gray-200 font-semibold cursor-pointer text-lg rounded-lg flex justify-center items-center hover:scale-110 transition-all ease-linear duration-300">
 						Clothes
 					</span>

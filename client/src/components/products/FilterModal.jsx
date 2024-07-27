@@ -16,7 +16,7 @@ const FilterModal = () => {
 	return (
 		<>
 			<div
-				className="flex flex-row items-center gap-5 cursor-pointer text-pink-500 my-5"
+				className="flex flex-row items-center gap-5 cursor-pointer text-pink-500 my-5 sticky z-20 top-0"
 				onClick={HandleOpenModal}
 			>
 				<FaFilter size={24} />

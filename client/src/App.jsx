@@ -3,6 +3,8 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import ErrorPage from "./pages/ErrorPage";
+import AboutDeveloper from "./pages/AboutDeveloper";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const App = () => {
 	return (
@@ -12,6 +14,8 @@ const App = () => {
 					<Route element={<Layout />}>
 						<Route path="/" element={<Home />} />
 						<Route path="/products" element={<Products />} />
+						<Route path="developer" element={<AboutDeveloper />} />
+						<Route path="privacy-policy" element={<PrivacyPolicy />} />
 					</Route>
 					<Route path="*" element={<ErrorPage />} />
 				</Routes>
