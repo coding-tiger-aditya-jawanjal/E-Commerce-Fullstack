@@ -15,7 +15,7 @@ const ErrorPage = () => {
 						We can`t seem to find a page you are looking for
 					</h5>
 					<button
-						className=" w-40 500:w-72 800:w-40 lg:w-72 h-14 500:h-24 800:h-16 lg:h-20 rounded-lg cursor-pointer bg-blue-300 self-center 500:text-4xl 800:text-xl lg:text-3xl font-bold hover:scale-105 transition-all ease-linear duration-300 hover:text-orange-800 hover:underline"
+						className="px-6 py-3 rounded-lg cursor-pointer bg-blue-300 self-center 500:text-4xl 800:text-xl lg:text-3xl font-bold hover:scale-105 transition-all ease-linear duration-300 hover:text-orange-800 hover:underline"
 						onClick={() => navigate(-1)}
 					>
 						Go Back

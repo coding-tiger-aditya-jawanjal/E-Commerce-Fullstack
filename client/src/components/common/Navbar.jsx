@@ -92,7 +92,7 @@ const Navbar = () => {
 							onClick={handleToggleProfileMenu}
 						/>
 						<ul
-							className="absolute bg-white-100 rounded-lg p-3 shadow-xl shadow-black flex gap-3 800:gap-5 flex-col z-20 right-1 w-40 font-serif text-xl 800:text-2xl font-medium border-2 border-gray-400 800:hidden 800:opacity-0 text-orange-800"
+							className="absolute bg-white-100 rounded-lg p-3 shadow-xl shadow-black flex gap-3 800:gap-5 flex-col z-20 right-1 w-max font-serif text-xl 800:text-2xl font-medium border-2 border-gray-400 800:hidden 800:opacity-0 text-orange-800"
 							id="profile"
 						>
 							{ProfileMenu.map((menu) => (
@@ -112,7 +112,7 @@ const Navbar = () => {
 							onClick={handleToggleMenu}
 						/>
 						<ul
-							className="absolute bg-white-100 rounded-lg p-3 shadow-xl shadow-black flex gap-3 800:gap-5 flex-col z-20 right-1 w-40 font-serif text-xl 800:text-2xl font-medium border-2 border-gray-400 800:hidden 800:opacity-0 text-orange-800"
+							className="absolute bg-white-100 rounded-lg p-3 shadow-xl shadow-black flex gap-3 800:gap-5 flex-col z-20 right-1 w-max font-serif text-xl 800:text-2xl font-medium border-2 border-gray-400 800:hidden 800:opacity-0 text-orange-800"
 							id="menu"
 						>
 							{FullMenu.map((menu) => (

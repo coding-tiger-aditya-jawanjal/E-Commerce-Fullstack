@@ -3,8 +3,32 @@
 @tailwind utilities;
 
 .bg {
-	background-image: url('https://t3.ftcdn.net/jpg/05/04/37/10/360_F_504371073_TmmB9U3UYkbZnbbqs0ETz135Y1ftf6BG.jpg');
-	background-position:100% 100% ;
+	background-image: url("https://t3.ftcdn.net/jpg/05/04/37/10/360_F_504371073_TmmB9U3UYkbZnbbqs0ETz135Y1ftf6BG.jpg");
+	background-position: 100% 100%;
 	background-clip: text;
 	color: transparent;
+}
+#range-slider-gradient {
+	height: 24px;
+	border-radius: 12px;
+	background: #353644;
+}
+
+#range-slider-gradient .range-slider__thumb {
+	border: 6px solid #fff;
+	box-sizing: border-box;
+}
+
+#range-slider-gradient .range-slider__thumb[data-lower] {
+	background: #0073e6;
+}
+
+#range-slider-gradient .range-slider__thumb[data-upper] {
+	background: #ee2c2c;
+}
+
+#range-slider-gradient .range-slider__range {
+	background: linear-gradient(to right, #0073e6, #ee2c2c);
+	background-size: 200% 100%;
+	background-position: 50% 0;
 }

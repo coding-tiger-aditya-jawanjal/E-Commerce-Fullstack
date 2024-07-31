@@ -1,8 +1,9 @@
-import { FooterData } from "../../seed/data";
+import { FooterData, SocialLink } from "../../seed/data";
 import { FaYoutube } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { FaLinkedin } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -14,14 +15,14 @@ const Footer = () => {
 							{e.title}
 						</h3>
 						<div className="flex flex-col gap-5 text-gray-300">
-							{e.features.map((e) => (
-								<a
-									href="#"
-									key={e}
+							{e.features.map((feature) => (
+								<Link
+									to={feature.url}
+									key={feature.featureName}
 									className=" hover:cursor-pointer hover:underline"
 								>
-									{e}
-								</a>
+									{feature.featureName}
+								</Link>
 							))}
 						</div>
 					</div>
@@ -31,24 +32,7 @@ const Footer = () => {
 						<h3 className="font-bold font-sans pb-2 border-b-2 border-pink-300">
 							Follow Us
 						</h3>
-						<div className="flex flex-row gap-5 items-center">
-							<FaYoutube
-								size={40}
-								className=" cursor-pointer text-red-500 hover:scale-125 transition-all duration-300 ease-in-out"
-							/>
-							<AiFillTwitterCircle
-								size={40}
-								className=" cursor-pointer text-blue-600 hover:scale-125 transition-all duration-300 ease-in-out"
-							/>
-							<PiInstagramLogoFill
-								size={40}
-								className=" cursor-pointer text-pink-300 hover:scale-125 transition-all duration-300 ease-in-out"
-							/>
-							<FaLinkedin
-								size={40}
-								className=" cursor-pointer text-blue-400 hover:scale-125 transition-all duration-300 ease-in-out"
-							/>
-						</div>
+						<SocialContacts />
 					</div>
 				</div>
 			</div>
@@ -60,3 +44,34 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const SocialContacts = () => {
+	return (
+		<div className="flex flex-row gap-5 items-center">
+			<Link to={SocialLink.youtube}>
+				<FaYoutube
+					size={40}
+					className=" cursor-pointer text-red-500 hover:scale-125 transition-all duration-300 ease-in-out"
+				/>
+			</Link>
+			<Link to={SocialLink.twitter}>
+				<AiFillTwitterCircle
+					size={40}
+					className=" cursor-pointer text-blue-600 hover:scale-125 transition-all duration-300 ease-in-out"
+				/>
+			</Link>
+			<Link to={SocialLink.instagram}>
+				<PiInstagramLogoFill
+					size={40}
+					className=" cursor-pointer text-pink-300 hover:scale-125 transition-all duration-300 ease-in-out"
+				/>
+			</Link>
+			<Link to={SocialLink.linkedin}>
+				<FaLinkedin
+					size={40}
+					className=" cursor-pointer text-blue-400 hover:scale-125 transition-all duration-300 ease-in-out"
+				/>
+			</Link>
+		</div>
+	);
+};

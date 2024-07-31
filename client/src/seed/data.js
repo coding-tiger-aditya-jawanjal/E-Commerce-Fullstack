@@ -5,6 +5,7 @@ import Banner1 from "/banner1.png";
 import Banner3 from "/banner3.png";
 import Banner4 from "/banner4.png";
 import Banner5 from "/sony-banner.png";
+import BrandLogo from "/brand-logo.png";
 
 export const FullMenu = [
 	{
@@ -89,26 +90,74 @@ export const FooterData = [
 	{
 		title: "Company",
 		features: [
-			"About Us",
-			"Our Privacy",
-			"Privacy Policy",
-			"Affiliate Program",
+			{
+				featureName: "About Me",
+				url: "/developer",
+			},
+			{
+				featureName: "Our Privacy",
+				url: "/",
+			},
+			{
+				featureName: "Privacy Policy",
+				url: "/privacy-policy",
+			},
+			{
+				featureName: "Affiliate Program",
+				url: "/",
+			},
 		],
 	},
 	{
 		title: "Get Help",
-		features: ["FAQ", "Shipping", "Returns", "Order Status", "Payment Options"],
+		features: [
+			{ featureName: "FAQ", url: "/" },
+			{ featureName: "Shipping", url: "/" },
+			{ featureName: "Returns", url: "/" },
+			{ featureName: "Order Status", url: "/" },
+			{ featureName: "Payment Options", url: "/" },
+		],
 	},
 	{
 		title: "Online Shop",
-		features: ["Watch", "Bag", "Shoes", "Dress"],
+		features: [
+			{ featureName: "Watch", url: "/" },
+			{ featureName: "Bag", url: "/" },
+			{ featureName: "Shoes", url: "/" },
+			{ featureName: "Dress", url: "/" },
+		],
 	},
 ];
 
 export const MyDetails = {
+	logo: BrandLogo,
 	title: "About Me : ",
 	headline: "Hi , I am Aditya Jawanjal",
-	para1:
+	para: [
 		"Check if other CSS properties or parent containers could be interfering with the sticky behavior. Specifically, ensure that no parent elements have overflow: hidden or similar styles that might affect scrolling and positioning.",
-	para2: "para 2",
+		"good",
+	],
+};
+
+export const PrivacyPolicyDetails = [
+	{
+		heading: "Introduction",
+		text: "Welcome to our e-commerce website. We value your privacy and are committed to protecting your personal information. This privacy policy explains how we collect, use, and disclose your information when you use our services.",
+	},
+	{
+		heading: "Introduction",
+		text: "Welcome to our e-commerce website. We value your privacy and are committed to protecting your personal information. This privacy policy explains how we collect, use, and disclose your information when you use our services.",
+	},
+	{
+		heading: "Introduction",
+		text: "Welcome to our e-commerce website. We value your privacy and are committed to protecting your personal information. This privacy policy explains how we collect, use, and disclose your information when you use our services.",
+	},
+];
+
+export const SocialLink = {
+	youtube: "#",
+	instagram: "#",
+	facebook: "#",
+	twitter: "#",
+	linkedin:"#"
 };
